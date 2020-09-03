@@ -8,6 +8,9 @@ const orm = {
     createNew(table, data){
         return db.query(`INSERT INTO ${table} SET ?`, data)
     }
+    // updateData(table, data){
+    //     return db.query(`UPDATE ${table} SET ?`, data)
+    // }
 }
 
 module.exports = orm;
